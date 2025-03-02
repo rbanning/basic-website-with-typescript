@@ -110,17 +110,12 @@ export class ProgressCounter extends HTMLElement {
     }
   }
 
-  private counter = 0;
   update() {
     if (this.ready) {
       this.updateArcs(this.percent);
       const output = this.shadow.querySelector('.output');
       if (output) {
         output.textContent = this.text;
-      }
-      if (this.counter < 5) {
-        this.counter++;
-        console.log(">>> update()", {text: this.text, percent: this.percent});
       }
     }
   }

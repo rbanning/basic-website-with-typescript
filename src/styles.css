@@ -10,3 +10,12 @@ html, body {
 .distress {
   font-family: 'Special Elite', cursive;
 }
+
+a {
+  /* example of using @apply to bring in tailwind classes */
+  /* see README for more info */
+  @apply 
+    border-b-2 border-b-slate-200 hover:border-b-teal-900
+    text-teal-900 hover:text-teal-600 
+    transition-colors duration-300;
+}

@@ -15,9 +15,16 @@ build/
 *.log
 
 # Ignore IDE specific files
-.vscode/
 .idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
+
+# allow certain - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/css-data.json

@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Website 🤓</title>
-  <script src="dist/main.js" defer></script>
+  <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+  <link rel="stylesheet" href="/src/styles.css" />
 </head>
 <body>
-  <h1>Welcome</h1>
-  <p>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto 
-    ex sint vitae nemo asperiores? Velit officiis doloribus accusantium, 
-    aut provident consectetur repellat, voluptate et perspiciatis suscipit est sapiente reprehenderit deserunt?
-  </p>
+  <main class="my-12 mx-auto max-w-lg">
+    <h1 class="text-6xl text-center">Welcome</h1>  
+    <p class="text-center distress">This is a simple website template.</p>
+    <div id="timer"></div>
+  </main>
+
+  <script type="module" src="/src/main.ts"></script>
 </body>
 </html>

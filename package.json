@@ -2,13 +2,18 @@
   "name": "basic-website-with-typescript",
   "version": "0.0.1",
   "description": "Simple website that uses typescript (for cloning)",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "tsc --watch"
+    "build": "tsc && vite build",
+    "dev": "vite",
+    "start": "vite preview"
   },
   "author": "Hallpass and Friends",
   "license": "ISC",
   "devDependencies": {
-    "typescript": "^5.8.2"
+    "@tailwindcss/vite": "^4.0.9",
+    "tailwindcss": "^4.0.9",
+    "typescript": "^5.8.2",
+    "vite": "^6.2.0"
   }
 }

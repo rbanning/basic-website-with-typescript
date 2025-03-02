@@ -1,28 +1,13 @@
-interface IApp {
-  name: string;
-  version: string;
-}
-
-const app: IApp = {
-  name: 'Sample App',
-  version: '0.0.1',
-};
+import { ProgressCounter } from "./components/progress-counter.component";
+import { createFooter } from "./footer";
+import { createTimer } from "./timer/timer";
 
 function main() {
-  const footer = document.createElement('footer');
-  footer.style.position = 'fixed';
-  footer.style.bottom = '0';
-  footer.style.left = '0';
-  footer.style.width = '100vw';
-  footer.style.backgroundColor = '#333';
-  footer.style.color = '#fff';
-  footer.style.padding = '1rem';
-  footer.style.textAlign = 'center';
+  //register all web components
+  ProgressCounter.register();
 
-  footer.innerHTML = `
-    <p>&copy; ${new Date().getFullYear()} ${app.name} v${app.version}</p>
-  `;
-  document.body.appendChild(footer);
+  createFooter();
+  createTimer(document.getElementById('timer'));
 }
 
 main();

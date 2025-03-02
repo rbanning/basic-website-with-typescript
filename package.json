@@ -1,0 +1,14 @@
+{
+  "name": "basic-website-with-typescript",
+  "version": "0.0.1",
+  "description": "Simple website that uses typescript (for cloning)",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc --watch"
+  },
+  "author": "Hallpass and Friends",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.8.2"
+  }
+}

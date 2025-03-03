@@ -8,7 +8,7 @@ Create a fork of this repo and start making magic!
 
 ### Vite
 
-Using [Vite](https://vite.dev/) to build the site.  See **running** and **deploying** below
+Using [Vite](https://vite.dev/) to bundle the site.  See **running** and **deploying** below
 
 ### Tailwind CSS
 

@@ -4,6 +4,24 @@ This is a very bare-bones website using typescript ready for development.
 
 Create a fork of this repo and start making magic!
 
+## Structure
+
+**index.html** - starting point for the app.  
+
+**/src/** - this is where all of the scripting lives
+
+**/public/** - for site assets (e.g. images)
+
+The site is **very** typescript heavy, with lots of `document.createElement('...')` instead of raw HTML coding.
+The site includes a custom web component, *hacky* interactivity between components/elements, and a variety of 
+styling approaches.
+
+This might not be for everyone.  
+
+## Demo
+
+[**view demo**](https://rbanning.github.io/basic-website-with-typescript/)
+
 ## Uses...
 
 ### Vite

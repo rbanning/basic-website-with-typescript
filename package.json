@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "build": "tsc && vite build",
-    "dev": "vite",
-    "start": "vite",
+    "dev": "vite --port 3000",
+    "start": "vite --port 3000",
     "preview": "vite preview"
   },
   "author": "Hallpass and Friends",

@@ -12,11 +12,17 @@ Create a fork of this repo and start making magic!
 
 **/public/** - for site assets (e.g. images)
 
-#### Adding additional pages
+### Adding additional pages
 
-**second.html** is an example of how you can add additional pages to the site.  For now, all 
+**second.html** is an example of how you can add additional pages to the site.  
 
-#### Note...
+You can put pages in sub-folders.  Check out **third/index.html** and **third/fourth/index.html**
+
+Notice that all of the links are to the specific .html file.  In other words, we are old school... 
+with the exception of the initial page, all urls must include the file name.
+*Maybe, someone can learn me on how to configure Vite to default to index.html in a folder.*
+
+### Note...
 
 The site is **very** typescript heavy, with lots of `document.createElement('...')` instead of raw HTML coding.
 The site includes a custom web component, *hacky* interactivity between components/elements, and a variety of 

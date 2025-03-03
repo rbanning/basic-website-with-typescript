@@ -11,6 +11,7 @@ on:
 permissions:
   contents: read
   pages: write
+  id-token: write
 
 # limit to one workflow run at a time to avoid concurrent deployments to GitHub Pages
 # do NOT cancel in-progress workflow runs to allow run to complete
@@ -42,16 +43,31 @@ jobs:
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v4
         with:
-          name: production-files
+          name: dist
           path: ./dist
 
   deploy:
     name: Deploy
     needs: build
+
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
 
     steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: dist
+
+      - name: Display Artifact
+        run: ls -R dist
+
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
         

@@ -12,6 +12,12 @@ Create a fork of this repo and start making magic!
 
 **/public/** - for site assets (e.g. images)
 
+#### Adding additional pages
+
+**second.html** is an example of how you can add additional pages to the site.  For now, all 
+
+#### Note...
+
 The site is **very** typescript heavy, with lots of `document.createElement('...')` instead of raw HTML coding.
 The site includes a custom web component, *hacky* interactivity between components/elements, and a variety of 
 styling approaches.
